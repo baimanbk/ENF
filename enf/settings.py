@@ -44,6 +44,7 @@ INSTALLED_APPS = [
 
     'main',
     'cart',
+    'users',
 ]
 
 MIDDLEWARE = [
@@ -140,3 +141,5 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 SESSION_COOKIE_AGE = 86400 # 30 дней
 SESSION_SAVE_EVERY_REQUEST = True
+
+AUTH_USER_MODEL = 'users.CustomUser'
