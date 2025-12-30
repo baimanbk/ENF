@@ -1,6 +1,7 @@
 from django.apps import AppConfig
 from django.contrib.auth.admin import UserAdmin
 from .models import CustomUser
+from django.contrib import admin
 
 
 class CustomUserAdmin(UserAdmin):
