@@ -1,26 +1,26 @@
-ERD - Интернет-магазин одежды (Django + HTMX + Alpine.js)
+ ERD - Интернет-магазин одежды (Django + HTMX + Alpine.js)
 
 Запуск проекта
 1. Локальный запуск (без Docker)
-Установите зависимости:
-python -m pip install -r requirements.txt
-Создайте и активируйте виртуальное окружение:
-python -m venv venv
-source venv/bin/activate  # Linux/Mac
-venv\Scripts\activate    # Windows
-Настройте переменные окружения:
+-Установите зависимости:
+-python -m pip install -r requirements.txt
+-Создайте и активируйте виртуальное окружение:
+-python -m venv venv
+-source venv/bin/activate  # Linux/Mac
+-venv\Scripts\activate    # Windows
+-Настройте переменные окружения:
 # Заполните .env своими значениями(пример .env ниже)
 Запустите миграции:
-python manage.py migrate
-Создайте суперпользователя:
-python manage.py createsuperuser
-Запустите сервер:
-python manage.py runserver
+-python manage.py migrate
+-Создайте суперпользователя:
+-python manage.py createsuperuser
+-Запустите сервер:
+-python manage.py runserver
 2. Запуск на сервере (с SSL)
-Подготовьте домен:
+-Подготовьте домен:
 
-Укажите DNS запись для domen.com на ваш IP
-Настройте .env:
+-Укажите DNS запись для domen.com на ваш IP
+-Настройте .env:
 
 SECRET_KEY='example'
 
